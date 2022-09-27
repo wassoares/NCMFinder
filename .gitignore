@@ -1,0 +1,28 @@
+# Java
+*.class
+*.jar
+*.war
+
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# eclipse
+.settings/
+bin/
+.classpath
+.project
+
+# IntelliJ
+out/
+.idea/
+.idea_modules/
+
+# NetBeans
+nbproject/private/
+build/
+dist/
+
+# VS Code
+.vscode/
