@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infNFe versao="4.00" Id="NFe?">
+      <ide>
+        <cUF>25</cUF>
+        <cNF>20600648</cNF>
+        <natOp>DEVOLUcaO DE COMPRA PARA COMERCIALIZAcaO EM OPERAcaO COM MER</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>3240</nNF>
+        <dhEmi>2022-07-30T09:18:34-03:00</dhEmi>
+        <dhSaiEnt>2022-07-30T09:18:34-03:00</dhSaiEnt>
+        <tpNF>1</tpNF>
+        <idDest>1</idDest>
+        <cMunFG>2504009</cMunFG>
+        <tpImp>1</tpImp>
+        <tpEmis>1</tpEmis>
+        <cDV>9</cDV>
+        <tpAmb>1</tpAmb>
+        <finNFe>4</finNFe>
+        <indFinal>0</indFinal>
+        <indPres>1</indPres>
+        <procEmi>0</procEmi>
+        <verProc>NFeManager v.2.3.9.1</verProc>
+        <NFref>
+          <refNFe>?</refNFe>
+        </NFref>
+      </ide>
+      <emit>
+        <CNPJ>?</CNPJ>
+        <xNome>?</xNome>
+        <enderEmit>
+          <xLgr>?</xLgr>
+          <nro>?</nro>
+          <xBairro>?</xBairro>
+          <cMun>2504009</cMun>
+          <xMun>CAMPINA GRANDE</xMun>
+          <UF>PB</UF>
+          <CEP>?</CEP>
+          <fone>?</fone>
+        </enderEmit>
+        <IE>?</IE>
+        <CRT>1</CRT>
+      </emit>
+      <dest>
+        <CNPJ>?</CNPJ>
+        <xNome>?</xNome>
+        <enderDest>
+          <xLgr>?</xLgr>
+          <nro>?</nro>
+          <xBairro>?</xBairro>
+          <cMun>2504009</cMun>
+          <xMun>CAMPINA GRANDE</xMun>
+          <UF>PB</UF>
+          <CEP>?</CEP>
+          <cPais>1058</cPais>
+          <xPais>BRASIL</xPais>
+          <fone>?</fone>
+        </enderDest>
+        <indIEDest>1</indIEDest>
+        <IE>162166567</IE>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>10232</cProd>
+          <cEAN>SEM GTIN</cEAN>
+          <xProd>POLIA VIRABREQUIM BB00108032</xProd>
+          <NCM>84835010</NCM>
+          <CEST>0105000</CEST>
+          <CFOP>5411</CFOP>
+          <uCom>UND</uCom>
+          <qCom>1.0000</qCom>
+          <vUnCom>102.6200000000</vUnCom>
+          <vProd>102.62</vProd>
+          <cEANTrib>SEM GTIN</cEANTrib>
+          <uTrib>UND</uTrib>
+          <qTrib>1.0000</qTrib>
+          <vUnTrib>102.6200000000</vUnTrib>
+          <indTot>1</indTot>
+        </prod>
+        <imposto>
+          <vTotTrib>35.37</vTotTrib>
+          <ICMS>
+            <ICMSSN500>
+              <orig>0</orig>
+              <CSOSN>500</CSOSN>
+              <vBCSTRet>0.00</vBCSTRet>
+              <pST>0.00</pST>
+              <vICMSSubstituto>0.00</vICMSSubstituto>
+              <vICMSSTRet>0.00</vICMSSTRet>
+              <pRedBCEfet>0.0000</pRedBCEfet>
+              <vBCEfet>0.00</vBCEfet>
+              <pICMSEfet>0.0000</pICMSEfet>
+              <vICMSEfet>0.00</vICMSEfet>
+            </ICMSSN500>
+          </ICMS>
+          <PIS>
+            <PISNT>
+              <CST>04</CST>
+            </PISNT>
+          </PIS>
+          <COFINS>
+            <COFINSNT>
+              <CST>04</CST>
+            </COFINSNT>
+          </COFINS>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vBC>0.00</vBC>
+          <vICMS>0.00</vICMS>
+          <vICMSDeson>0.00</vICMSDeson>
+          <vFCP>0.00</vFCP>
+          <vBCST>0.00</vBCST>
+          <vST>0.00</vST>
+          <vFCPST>0.00</vFCPST>
+          <vFCPSTRet>0.00</vFCPSTRet>
+          <vProd>102.62</vProd>
+          <vFrete>0.00</vFrete>
+          <vSeg>0.00</vSeg>
+          <vDesc>0.00</vDesc>
+          <vII>0.00</vII>
+          <vIPI>0.00</vIPI>
+          <vIPIDevol>0.00</vIPIDevol>
+          <vPIS>0.00</vPIS>
+          <vCOFINS>0.00</vCOFINS>
+          <vOutro>0.00</vOutro>
+          <vNF>102.62</vNF>
+          <vTotTrib>35.37</vTotTrib>
+        </ICMSTot>
+      </total>
+      <transp>
+        <modFrete>0</modFrete>
+        <transporta>
+          <xNome>O MESMO</xNome>
+          <UF>PB</UF>
+        </transporta>
+        <vol>
+          <qVol>1</qVol>
+          <pesoL>0.000</pesoL>
+          <pesoB>0.000</pesoB>
+        </vol>
+      </transp>
+      <pag>
+        <detPag>
+          <tPag>90</tPag>
+          <vPag>0.00</vPag>
+        </detPag>
+      </pag>
+      <infAdic>
+        <infCpl>Valor Aprox. R$ 16,90(16,47) Federal, R$ 18,47(18,00) Estadual Fonte: IBPT GARANTIA REF. A NOTA 581.783 ------ DEFEITO DE CONSTRUcaO</infCpl>
+      </infAdic>
+      <infRespTec>
+        <CNPJ>?</CNPJ>
+        <xContato>?</xContato>
+        <email>?</email>
+        <fone>?</fone>
+      </infRespTec>
+    </infNFe>
+    <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+      <SignedInfo>
+        <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+        <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+        <Reference URI="#NFe?">
+          <Transforms>
+            <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+            <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+          </Transforms>
+          <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+          <DigestValue>wEOsYON/Yrbvbsf9tlBksDPMAaU=</DigestValue>
+        </Reference>
+      </SignedInfo>
+      <SignatureValue>LXmlPMmjikqFU8na95AIrO1osHUQe/ewzN6T+YfCO5sNE953W/e4kHsiPX1bPK2EFxf8wwC+tb65WufEaxi3ezaLbjUEkEfSu6wV9EFLMAwFY97V4cKiXJnw1f5INnvIm4vmpOVrS08rGDxS06MkWXwhK2JWushqOaDcCpaVaoOA6wINVaRyTFDiBO9CuIfxXTTAHrPr2wS9+8AqbGceQmRodtMxWOEye8/qWRzOBSevU68JwTowIPzYo7F4PH6VRVZyiTnBoA5V5LIzWNRmVAgGC2agejW9mvinkDhmLODAbrcvJZeSQy8RBdZjqtqcJOedKa8RpAuL+uKNwUxcEA==</SignatureValue>
+      <KeyInfo>
+        <X509Data>
+          <X509Certificate>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</X509Certificate>
+        </X509Data>
+      </KeyInfo>
+    </Signature>
+  </NFe>
+  <protNFe versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <infProt>
+      <tpAmb>1</tpAmb>
+      <verAplic>SVRS202207281426</verAplic>
+      <chNFe>?</chNFe>
+      <dhRecbto>2022-07-30T09:21:40-03:00</dhRecbto>
+      <nProt>?</nProt>
+      <digVal>wEOsYON/Yrbvbsf9tlBksDPMAaU=</digVal>
+      <cStat>100</cStat>
+      <xMotivo>Autorizado o uso da NF-e</xMotivo>
+    </infProt>
+  </protNFe>
+</nfeProc>

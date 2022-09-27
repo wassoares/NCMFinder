@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc versao="4.00" xmlns="http://www.portalfiscal.inf.br/nfe">
+    <NFe xmlns="http://www.portalfiscal.inf.br/nfe">
+        <infNFe versao="4.00" Id="NFe?">
+            <ide>
+                <cUF>25</cUF>
+                <cNF>57084824</cNF>
+                <natOp>VENDAS</natOp>
+                <mod>65</mod>
+                <serie>1</serie>
+                <nNF>7415</nNF>
+                <dhEmi>2022-08-01T08:48:24-03:00</dhEmi>
+                <tpNF>1</tpNF>
+                <idDest>1</idDest>
+                <cMunFG>2504009</cMunFG>
+                <tpImp>4</tpImp>
+                <tpEmis>1</tpEmis>
+                <cDV>8</cDV>
+                <tpAmb>1</tpAmb>
+                <finNFe>1</finNFe>
+                <indFinal>1</indFinal>
+                <indPres>1</indPres>
+                <procEmi>0</procEmi>
+                <verProc>DS5NFCeDll 08272021</verProc>
+            </ide>
+            <emit>
+                <CNPJ>?</CNPJ>
+                <xNome>?</xNome>
+                <xFant>?</xFant>
+                <enderEmit>
+                    <xLgr>?</xLgr>
+                    <nro>?</nro>
+                    <xCpl>?</xCpl>
+                    <xBairro>?</xBairro>
+                    <cMun>2504009</cMun>
+                    <xMun>Campina Grande</xMun>
+                    <UF>PB</UF>
+                    <CEP>?</CEP>
+                    <cPais>1058</cPais>
+                    <xPais>BRASIL</xPais>
+                    <fone>?</fone>
+                </enderEmit>
+                <IE>?</IE>
+                <IM>?</IM>
+                <CRT>1</CRT>
+            </emit>
+            <det nItem="1">
+                <prod>
+                    <cProd>5481</cProd>
+                    <cEAN>SEM GTIN</cEAN>
+                    <xProd>LIMPA AR COND FLORAL 140ML/90G</xProd>
+                    <NCM>34029019</NCM>
+                    <CEST>0000000</CEST>
+                    <CFOP>5405</CFOP>
+                    <uCom>UN</uCom>
+                    <qCom>7.0000</qCom>
+                    <vUnCom>30.0000000000</vUnCom>
+                    <vProd>210.00</vProd>
+                    <cEANTrib>SEM GTIN</cEANTrib>
+                    <uTrib>UN</uTrib>
+                    <qTrib>7.0000</qTrib>
+                    <vUnTrib>30.0000000000</vUnTrib>
+                    <vDesc>10.00</vDesc>
+                    <indTot>1</indTot>
+                </prod>
+                <imposto>
+                    <vTotTrib>65.96</vTotTrib>
+                    <ICMS>
+                        <ICMSSN500>
+                            <orig>0</orig>
+                            <CSOSN>500</CSOSN>
+                        </ICMSSN500>
+                    </ICMS>
+                </imposto>
+            </det>
+            <total>
+                <ICMSTot>
+                    <vBC>0.00</vBC>
+                    <vICMS>0.00</vICMS>
+                    <vICMSDeson>0.00</vICMSDeson>
+                    <vFCP>0.00</vFCP>
+                    <vBCST>0.00</vBCST>
+                    <vST>0.00</vST>
+                    <vFCPST>0.00</vFCPST>
+                    <vFCPSTRet>0.00</vFCPSTRet>
+                    <vProd>210.00</vProd>
+                    <vFrete>0.00</vFrete>
+                    <vSeg>0.00</vSeg>
+                    <vDesc>10.00</vDesc>
+                    <vII>0.00</vII>
+                    <vIPI>0.00</vIPI>
+                    <vIPIDevol>0.00</vIPIDevol>
+                    <vPIS>0.00</vPIS>
+                    <vCOFINS>0.00</vCOFINS>
+                    <vOutro>0.00</vOutro>
+                    <vNF>200.00</vNF>
+                    <vTotTrib>65.96</vTotTrib>
+                </ICMSTot>
+            </total>
+            <transp>
+                <modFrete>9</modFrete>
+            </transp>
+            <pag>
+                <detPag>
+                    <tPag>99</tPag>
+                    <xPag>Outras forma de pgto negociada</xPag>
+                    <vPag>200.00</vPag>
+                </detPag>
+            </pag>
+        </infNFe>
+        <infNFeSupl>
+            <qrCode>http://www.sefaz.pb.gov.br/nfce?p=?|2|1|2|01DB30853CEA33D660A5FF7D62C7E8DB38B4251C</qrCode>
+            <urlChave>www.sefaz.pb.gov.br/nfce/consulta</urlChave>
+        </infNFeSupl>
+        <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+            <SignedInfo>
+                <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+                <Reference URI="#NFe?">
+                    <Transforms>
+                        <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                        <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+                    </Transforms>
+                    <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                    <DigestValue>XSfa7Ng9BwwpzI1EtJboICBDsz0=</DigestValue>
+                </Reference>
+            </SignedInfo>
+            <SignatureValue>FKAFkgXPNO4H3/M54uHWeRzvNqQBR1yceK0Fj8KlbiMNS7bwC/MvHxRHkqtkMwNDygAcMoZ0adQa64zvKcbOq1FJ29NPPWiIxGHlx+xzpSdG9vTXQ+aj0Yre6lX32PGuZfBDbHKn79kqc17zEgSL9BEJbsET9YlxHbxbfySK43bpMq7x5iJqf4sdYnNVsYlGBzBn/6wp8uMPi58gv6F2GIyUo7Fx/2fCOORUAEp8RLVQvLR0TmsvUyaL0c3B/yu6U34FE7lCXBpHpl85XoOBqijIvnSrjlLpZxbsvQ3du8qPlKkKvwE4XvU3KmsJ5x/nqYsYKwhUgS7tiopUaJFwiQ==</SignatureValue>
+            <KeyInfo>
+                <X509Data>
+                    <X509Certificate>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</X509Certificate>
+                </X509Data>
+            </KeyInfo>
+        </Signature>
+    </NFe>
+    <protNFe versao="4.00">
+        <infProt>
+            <tpAmb>1</tpAmb>
+            <verAplic>SVRSnfce202207191449</verAplic>
+            <chNFe>?</chNFe>
+            <dhRecbto>2022-08-01T08:48:28-03:00</dhRecbto>
+            <nProt>?</nProt>
+            <digVal>XSfa7Ng9BwwpzI1EtJboICBDsz0=</digVal>
+            <cStat>100</cStat>
+            <xMotivo>Autorizado o uso da NF-e</xMotivo>
+        </infProt>
+    </protNFe>
+</nfeProc>
