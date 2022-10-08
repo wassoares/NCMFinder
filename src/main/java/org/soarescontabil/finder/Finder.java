@@ -35,38 +35,90 @@ public class Finder {
 
     public static void main(String[] args) throws JAXBException {
         
-        List<String> contents = listDataFromSpreadsheet();
-        List<Record> records = unmarshallFilesToRecords();
-                
-        String value;
+        // extractedAll();
+        extractedSinglePhase();
+    }
+
+    private static void extractedAll() throws JAXBException {
+        // TODO Fix this...
+        System.out.println(TOP_LINE);
+
         double sum = 0.0;
-        // List<Record> result = new ArrayList<>();
+        String value;
+
+        List<Record> records = unmarshallFilesToRecords();
+        for (Record record : records) {
+            // TODO Fix this...
+            System.out.println(record);
+
+            value = replaceToUsFormat(record.getNetValue());
+            sum += Double.valueOf(value);
+        }
+        // TODO Fix this...
+        System.out.println("Soma Total: " + sum);
+
+        WriterCSV.saveFile(Constant.DIR_SAMPLE_FILE_PATH, records);
+    }
+
+    private static void extractedSinglePhase() throws JAXBException {
+        List<Record> result = new ArrayList<>();
+        double sum = 0.0;
+        String value;
         
         // TODO Fix this...
         System.out.println(TOP_LINE);
         
+        List<String> contents = listDataFromSpreadsheet();
+        List<Record> records = unmarshallFilesToRecords();
         for (Record record : records) {
-            
-            // if (!contents.contains(record.getCode()) &&
-            //     (
-            //         record.getOperation().equals("5102")
-            //         || record.getOperation().equals(Constant.INSIDE_OPERATION_CODE) 
-            //         || record.getOperation().equals(Constant.OUTSIDE_OPERATION_CODE)
-            //     )) {
-                    
-                    // TODO Fix this...
-                    System.out.println(record);
-                    // result.add(record);
-                    
-                    value = replaceToUsFormat(record.getNetValue());
-                    sum += Double.valueOf(value);
-            // }
+            if (contents.contains(record.getCode())
+                && (record.getOperation().equals("5102")
+                || record.getOperation().equals(Constant.INSIDE_OPERATION_CODE)
+                || record.getOperation().equals(Constant.OUTSIDE_OPERATION_CODE)))
+            {
+                // TODO Fix this...
+                System.out.println(record);
+                result.add(record);
+
+                value = replaceToUsFormat(record.getNetValue());
+                sum += Double.valueOf(value);
+            }
         }   
-        
+        // TODO Fix this...
         System.out.println("Soma Total: "+ sum);
 
-        // WriterCSV.saveFile(Constant.DIR_SAMPLE_FILE_PATH, result);
-       
+        WriterCSV.saveFile(Constant.DIR_SAMPLE_FILE_PATH, result);
+    }
+
+    private static void extractedNotSinglePhase() throws JAXBException {
+        List<Record> result = new ArrayList<>();
+        double sum = 0.0;
+        String value;
+
+        // TODO Fix this...
+        System.out.println(TOP_LINE);
+        
+        List<String> contents = listDataFromSpreadsheet();
+        List<Record> records = unmarshallFilesToRecords();
+        for (Record record : records) {
+            if (!contents.contains(record.getCode())
+                && (record.getOperation().equals("5102")
+                || record.getOperation().equals("5656")
+                || record.getOperation().equals(Constant.INSIDE_OPERATION_CODE)
+                || record.getOperation().equals(Constant.OUTSIDE_OPERATION_CODE)))
+            {
+                // TODO Fix this...
+                System.out.println(record);
+                result.add(record);
+
+                value = replaceToUsFormat(record.getNetValue());
+                sum += Double.valueOf(value);
+            }
+        }
+        // TODO Fix this...
+        System.out.println("Soma Total: "+ sum);
+
+        WriterCSV.saveFile(Constant.DIR_SAMPLE_FILE_PATH, result);
     }
 
     private static List<String> listDataFromSpreadsheet() {
@@ -120,11 +172,8 @@ public class Finder {
 
                 records.add(record);
             }
-            
         }
-    
         return records;
-        
     }
 
     private static String replaceToUsFormat(String value) {
