@@ -26,3 +26,6 @@ dist/
 
 # VS Code
 .vscode/
+
+# CSV file
+dir/sample/file.csv
